@@ -1,0 +1,98 @@
+.main{
+    &_wrapper{
+        position: relative;
+        background:url(../img/background.jpg) center center/cover no-repeat;
+        min-height: 800px;
+    }
+    &_content{
+        min-height: 800px;
+        max-width: 555px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    &_title{
+        &_text{
+            font-size: 72px;
+            line-height: 60px;
+            text-transform: uppercase;
+        }
+        &_text-2{
+            font-size: 57px;
+        }
+    }
+    &_subtitle{
+        margin-top: 40px;
+        &_text{
+            font-size: 28px;
+            line-height: 32px;
+            font-weight: 400;
+            color: #515254;
+        }
+    }
+    &_call_to_actions{
+        display: flex;
+    }
+    &_call_to_action{
+        margin-right: 40px;
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 186px;
+        height: 192px;
+        background-color: #000;
+        border-radius: 4px;
+        padding: 0px 28px;
+        box-sizing: border-box;
+        &_title{
+            color: #fff;
+            text-align: left;
+            margin-bottom: 25px;
+            font-size: 19px;
+            line-height: 24px;
+        }
+    }
+    &_shape{
+        &_1{
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-left: 635px solid #000;
+            border-top: 300px solid transparent;
+            border-bottom: 300px solid transparent;
+            border-radius: 78% 22% 43% 57% / 35% 19% 81% 65% ;
+            transform: rotate(45deg);
+            z-index: 3;
+        }
+        &_2{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            width: 0;
+            height: 20px;
+            border-left: 301px solid #64ccf3;
+            border-top: 388px solid transparent;
+            border-bottom: 34px solid transparent;
+            border-radius: 78% 22% 43% 57% / 35% 19% 81% 65% ;
+            transform: rotate(200deg);
+            z-index: 2;
+        }
+        &_3{
+            position: absolute;
+            top: 20%;
+            left: 60%;
+            width: 0;
+            height: 20px;
+            border-left: 350px solid #ffbb76;
+            border-top: 388px solid transparent;
+            border-bottom: 34px solid transparent;
+            border-radius: 78% 22% 43% 57% / 35% 19% 81% 65% ;
+            transform: rotate(-118deg);
+            z-index: 2;
+        }
+    }
+}
