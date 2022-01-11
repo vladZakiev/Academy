@@ -1,8 +1,8 @@
 .main{
     &_wrapper{
-        position: relative;
         background:url(../img/background.jpg) center center/cover no-repeat;
         min-height: 800px;
+        position: relative;
     }
     &_content{
         min-height: 800px;
@@ -55,43 +55,44 @@
         }
     }
     &_shape{
+        position: absolute;
+        top: 20%;
+        left:38%;
+        width: 700px;
+        &_wrapper{
+            
+        }
         &_1{
             position: absolute;
             top: 30%;
             left: 50%;
-            width: 0;
-            height: 0;
-            border-left: 635px solid #000;
-            border-top: 300px solid transparent;
-            border-bottom: 300px solid transparent;
-            border-radius: 78% 22% 43% 57% / 35% 19% 81% 65% ;
-            transform: rotate(45deg);
+            width: 630px;
+            height: 520px;
+            background-color: #000;
+            border-radius: 74% 27% 26% 76% / 51% 50% 50% 49%   ;
+            transform: rotate(180deg);
             z-index: 3;
+            
         }
         &_2{
             position: absolute;
-            top: 40%;
-            left: 50%;
-            width: 0;
-            height: 20px;
-            border-left: 301px solid #64ccf3;
-            border-top: 388px solid transparent;
-            border-bottom: 34px solid transparent;
-            border-radius: 78% 22% 43% 57% / 35% 19% 81% 65% ;
-            transform: rotate(200deg);
+            margin-top: 135px;
+            left: 34%;
+            width: 430px;
+            height: 333px;
+            background-color: #64ccf3;
+            border-radius: 80% 20% 19% 81% / 51% 50% 50% 49%  ;
+            transform: rotate(332deg);
             z-index: 2;
         }
         &_3{
             position: absolute;
-            top: 20%;
-            left: 60%;
-            width: 0;
-            height: 20px;
-            border-left: 350px solid #ffbb76;
-            border-top: 388px solid transparent;
-            border-bottom: 34px solid transparent;
-            border-radius: 78% 22% 43% 57% / 35% 19% 81% 65% ;
-            transform: rotate(-118deg);
+            left: 52%;
+            width: 514px;
+            height: 366px;
+            background-color: #ffbb76;
+            border-radius: 80% 20% 19% 81% / 51% 50% 50% 49%  ;
+            transform: rotate(129deg);
             z-index: 2;
         }
     }
