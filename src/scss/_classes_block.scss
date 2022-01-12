@@ -14,6 +14,7 @@
     }
     &_wrapper{
         display: flex;
+        justify-content: space-between;
     }
     &_info{
         max-width: 220px;
@@ -34,8 +35,74 @@
         }
     }
     &_carousel{
-        
-        height: 500px;
-        width: 500px;
+        margin-top: 80px;
+        &_wrapper{
+            max-width: 900px;
+        }
+        &_item{
+            width: 288px;
+            padding: 30px;
+            position: relative;
+            cursor: pointer;
+            &_image{
+                width: 270px;
+                height: 300px;
+                position: relative;
+                border-radius: 4px;
+                &:hover{
+                    -webkit-box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.45); 
+                    box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.45);
+                    transition: 0.3s;
+                }    
+                &::before{
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 270px;
+                    height: 300px;
+                    background: rgb(0,0,0);
+                    background: linear-gradient(0deg, rgba(0,0,0,0.9220063025210083) 7%, rgba(0,0,0,0.742734593837535) 14%, rgba(0,0,0,0.5242471988795518) 21%, rgba(0,0,0,0.3253676470588235) 28%, rgba(0,0,0,0.1825105042016807) 35%, rgba(0,0,0,0.053658963585434205) 41%, rgba(255,255,255,0) 48%);
+                    border-radius: 4px;
+                }
+                &-img{
+                    border-radius: 4px;
+                    width: 270px;
+                    height: 300px;
+                }
+            }
+            &_info{
+                display: flex;
+                position:absolute;
+                left: 13px;
+                bottom: 70px;
+            }
+            &_price{
+                width: 64px;
+                height: 58px;
+                background-color: #fff;
+                border-radius: 4px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                -webkit-box-shadow: -5px 7px 12px 1px rgba(0,0,0,0.21); 
+box-shadow: -5px 7px 12px 1px rgba(0,0,0,0.21);
+                
+                &_num{
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+            }
+            &_name{
+                margin-left: 15px;
+                width: 150px;
+                &_text{
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #fff;
+                    text-transform: uppercase;
+                }
+            }
+        }
+            
     }
 }
