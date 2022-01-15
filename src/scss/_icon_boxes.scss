@@ -1,0 +1,12 @@
+.icon_boxes{
+    &_wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .icon_box{
+        display: flex;
+        &_icon{
+            margin-right: 30px;
+        }
+    }
+}
