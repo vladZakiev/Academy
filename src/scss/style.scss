@@ -1,11 +1,15 @@
 *{
     margin: 0px;
 }
+a{
+    text-decoration: none;
+}
 body{
     font-family: Poppins;
 }
 
 $first-color:#ffc03f;
+$second-color:#64ccf3;
 
 .container{
     width: 1230px;
@@ -15,3 +19,5 @@ $first-color:#ffc03f;
 @import 'main_block';
 @import 'classes_block';
 @import 'icon_boxes';
+@import 'about_instructor';
+@import 'trial_block';

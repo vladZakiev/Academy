@@ -1,0 +1,80 @@
+.input_style{
+    outline: none;
+    box-sizing: border-box;
+    display: block;
+    border: 2px solid #d8d8d8;
+    outline: none;
+    background: none;
+    font-family: 'Popins';
+    font-size: 17px;
+    width: 570px;
+    height: 57px;
+    border-radius:4px;
+    padding-left: 30px;
+}
+.trial{
+    &_wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_shape{
+        margin-left: -150px;
+        margin-top: 120px;
+    }
+    &_content{
+        width: 575px;
+        margin-left: 50px;
+    }
+    &_heading{
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+    &_subheading{
+        font-size: 22px;
+        line-height: 24px;
+    }
+    ::-webkit-input-placeholder{
+        color:#7c7c7c;
+    }
+    ::-moz-placeholder{
+        color:#7c7c7c;
+    }
+    :-moz-placeholder{
+        color:#7c7c7c;
+    }
+    :-ms-input-placeholder{
+        color:#7c7c7c;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    &_form{
+        &_name_input{
+            .input_style{
+                outline: none;
+                box-sizing: border-box;
+                display: block;
+                border: 2px solid #d8d8d8;
+                outline: none;
+                background: none;
+                font-family: 'Popins';
+                font-size: 17px;
+                width: 575px;
+                height: 57px;
+                border-radius:4px;
+                padding-left: 30px;
+            }
+        }
+        &_details{
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            .input_style{
+                width: 270px;
+            }
+        }
+    }
+}
