@@ -1,3 +1,8 @@
+.text_paragraph{
+    font-size: 22px;
+    color: #515254;
+    margin-bottom: 30px;
+}
 .about_instructor{
     position: relative;
     &::before{
@@ -39,11 +44,6 @@
             font-size: 28px;
             line-height: 32px;
             margin-bottom: 50px;
-        }
-        .text_paragraph{
-            font-size: 22px;
-            color: #515254;
-            margin-bottom: 30px;
         }
         &_more{
             display: flex;
