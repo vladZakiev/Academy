@@ -1,0 +1,24 @@
+<svg id="Группа_1" data-name="Группа 1" xmlns="http://www.w3.org/2000/svg" width="637.438" height="544.16" viewBox="0 0 637.438 544.16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #64ccf3;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #ffbb76;
+      }
+
+      .cls-3 {
+        fill: #e5e5e5;
+      }
+    </style>
+  </defs>
+  <path id="blue_shape" data-name="blue shape" class="cls-1" d="M269.635,2986.31q193.2,17.415,129.592-144-63.6-161.4-193.2-17.42Q76.439,2968.89,269.635,2986.31Z" transform="translate(-154 -2602.12)"/>
+  <path id="orange_shape" data-name="orange shape" class="cls-2" d="M725.754,2829.88q21.356-306.15-232.315-200.8t-21.355,306.16Q704.4,3136.03,725.754,2829.88Z" transform="translate(-154 -2602.12)"/>
+  <path id="image" class="cls-3" d="M640.744,2747.35q-335.4-262.38-411.093,111.09t335.405,262.38Q976.149,3009.73,640.744,2747.35Z" transform="translate(-154 -2602.12)"/>
+</svg>

@@ -1,0 +1,173 @@
+.footer{
+    position: relative;
+    background-color: #f1f1f1;
+    padding-top: 80px;
+    &::after{
+        content: '';
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        bottom: 30%;
+        background-color: rgb(173, 173, 173);
+        opacity: 0.5;
+    }
+    &_wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    &_info{
+        display: flex;
+        margin-bottom: 40px;
+        &_media{
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            padding-right: 20px;
+            border-right:1px solid rgba(173, 173, 173, 0.438) ;
+            &_logo{
+                &_img{
+                    width: 170px;
+                }
+            }
+            &_title{
+                font-size: 19px;
+            }
+            &_socials{
+                display: flex;
+                &_facebook{
+                    color: #274d96;
+                    font-size: 36px;
+                    margin-right: 15px;
+                }
+                &_twitter{
+                    color: #19a0e2;
+                    font-size: 36px;
+                    margin-right: 15px;
+                }
+                &_instagram{
+                    color: #797979;
+                    font-size: 36px;
+                }
+            }
+        }
+        &_work_hours{
+            padding-left: 30px;
+            margin-right: 100px;
+            &_title{
+                font-size: 28px;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+            &_info{
+                display: flex;
+                flex-direction: column;
+                width: 400px;
+                &_first{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    &_days{
+                        font-size: 19px;
+                        margin-bottom: 10px;
+                    }
+                    &_hours{
+                        font-size: 19px;
+                        margin-bottom: 10px;
+                    }
+                }
+                &_second{
+                    display: flex;
+                    justify-content: space-between;
+                    &_days{
+                        font-size: 19px;
+                        margin-bottom: 10px;
+                    }
+                    &_hours{
+                        font-size: 19px;
+                        margin-bottom: 10px;
+                    }
+                }
+                &_third{
+                    &_more{
+                        font-size: 19px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        &_subscription{
+            &_heading{
+                font-size: 28px;
+                margin-bottom: 40px;
+            }
+            &_form{
+                &_email{
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 333px;
+                    height: 50px;
+                    border-radius: 30px;
+                    border: 2px solid #000;
+                    background-color: #fff;
+                    &_input{
+                        font-size: 17px;
+                        font-family: 'Popins';
+                        padding: 0px 30px;
+                        border: none;
+                        outline: none;
+                        background: none;
+                    }
+                }
+                &_submit{
+                    position: absolute;
+                    right: -40%;
+                    width: 178px;
+                    height: 54px;
+                    border-radius: 30px;
+                    border:none;
+                    padding: 0px;
+                    margin: 0px;
+                    background-color: #000;
+                    color: #fff;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    &:hover{
+                        color: #000;
+                        background-color: $first-color;
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+    }
+    &_nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0;
+        &_menu{
+            &_items{
+                display: flex;
+                list-style: none;
+                padding: 0px;
+                text-decoration: none;
+                outline: none;
+                &_item{
+                    margin-right: 45px;
+                    a{
+                        color: #000;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        &_copyright{
+            &_text{
+                margin-bottom: 0;
+                font-size: 19px;
+            }
+        }
+    }
+}
