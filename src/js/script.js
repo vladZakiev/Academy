@@ -42,11 +42,11 @@ $(document).ready(function(){
     });
 });
 
-const openPopUp = document.getElementsByClassName('open_reg_popup');
-const closePopUp = document.getElementsByClassName('close_reg_popup');
-const regPopup = document.getElementsByClassName('popap_reg');
-console.log(typeof(openPopUp))
-openPopUp.addEventListener('click', function(e){
+const openPopUp = document.querySelector('.open_reg_popup');
+const closePopUp = document.querySelector('.close_reg_popup');
+const regPopup = document.querySelector('.popap_reg');
+console.log(typeof(regPopup))
+openPopUp.addEventListener('change', function(e){
     regPopup.classList.add('active');
 })
 
