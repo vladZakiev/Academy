@@ -19,6 +19,30 @@
 </head>
 
 <body>
+    <div class="popap_reg">
+        <div class="container">
+            <div class="popap_reg_wrapper">
+                <div class="popap_reg_wrapper_inner">
+                    <h3 class="popap_reg_title">Registration</h3>
+                    <p class="popap_reg_subtitle">Register on our website</p>
+                    <form class="popap_reg_form" action="#">
+                        <div class="popap_reg_form_fields">
+                            <input type="text" class="popap_reg_first_name reg_input" placeholder="First name">
+                            <input type="text" class="popap_reg_last_name reg_input" placeholder="Last name">
+                            <input type="email" class="popap_reg_email reg_input" placeholder="Your Email">
+                            <input type="number" class="popap_reg_phone reg_input" placeholder="Your Phone">
+                        </div>
+                        <div class="popap_reg_form_btn">
+                            <button class="popap_reg_form_btn_button" type="submit">Register</button>
+                        </div>
+                    </form>
+                    <div class="popap_reg_exit">
+                        <span class="popap_reg_exit_act close_reg_popup">X</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="header">
         <div class="container">
             <div class="header_wrapper">
@@ -48,7 +72,7 @@
                     <div class="header_auth_button">
                         <select class="auth_select" name="Login" id="login_register">
                             <option class="select_option" value="logout">Login</option>
-                            <option class="select_option" value="logout">Register</option>
+                            <option class="select_option open_reg_popup" value="logout">Register</option>
                         </select>
                     </div>
                     <div class="header_hamburger_button"><a href="#"></a>
@@ -62,7 +86,6 @@
             </div>
         </div>
     </div>
-
     <div class="main">
         <div class="container">
             <div class="main_wrapper">
@@ -589,9 +612,9 @@
         </div>
 
     </div>
+    
+</body>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
-</body>
-
 </html>

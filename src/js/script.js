@@ -41,3 +41,15 @@ $(document).ready(function(){
         nextArrow: '<span class="blog_slider_btn"><i class="fas fa-chevron-right"></i></span>',
     });
 });
+
+const openPopUp = document.getElementsByClassName('open_reg_popup');
+const closePopUp = document.getElementsByClassName('close_reg_popup');
+const regPopup = document.getElementsByClassName('popap_reg');
+console.log(typeof(openPopUp))
+openPopUp.addEventListener('click', function(e){
+    regPopup.classList.add('active');
+})
+
+closePopUp.addEventListener('click', () => {
+    regPopup.classList.remove('active');
+})
