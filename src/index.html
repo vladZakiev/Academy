@@ -43,6 +43,36 @@
             </div>
         </div>
     </div>
+    <div class="popap_login">
+        <div class="container">
+            <div class="popap_login_wrapper">
+                <div class="popap_login_wrapper_inner">
+                    <h3 class="popap_login_title">Sign In</h3>
+                    <p class="popap_login_subtitle">Sign In on our website</p>
+                    <form class="popap_login_form" action="#">
+                        <div class="popap_login_form_fields">
+                            <input type="email" class="popap_login_email reg_input" placeholder="Your Email">
+                            <input type="password" class="popap_login_password reg_input" placeholder="Your Password">
+                        </div>
+                        <div class="popap_login_form_btn">
+                            <button class="popap_login_form_btn_button" type="submit">Sign In</button>
+                        </div>
+                    </form>
+                    <div class="popap_login_exit">
+                        <span class="popap_login_exit_act close_login_popup">X</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="media_popup close_video_popup">
+        <div class="media_popup_wrapper">
+            <iframe class="media_popup_video" width="560" height="315" src="https://www.youtube.com/embed/ESVu7Z0nx-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="media_popup_exit">
+                <span class="media_popup_exit_act close_login_popup">X</span>
+            </div>
+        </div>
+    </div>
     <div class="header">
         <div class="container">
             <div class="header_wrapper">
@@ -69,11 +99,12 @@
                             Cart
                         </button>
                     </div>
-                    <div class="header_auth_button">
-                        <select class="auth_select" name="Login" id="login_register">
-                            <option class="select_option" value="login">Login</option>
-                            <option class="select_option open_reg_popup" value="register">Register</option>
-                        </select>
+                    <div class="header_auth">
+                        <button class="header_auth_button">Sign up</button>
+                        <div  class="auth_select" name="Login" id="login_register">
+                            <a href="#" class="select_option open_login_popup" value="login">Login</a>
+                            <a href="#" class="select_option open_reg_popup" value="register">Register</a>
+                        </div>
                     </div>
                     <div class="header_hamburger_button"><a href="#"></a>
                         <div class="header_hamburger_button_wrapper">
@@ -263,12 +294,11 @@
                             <img class="about_instructor_info_media_banner_img" src="img/instrctor.jpg"
                                 alt="instructor">
                         </div>
-                        <a href="https://www.youtube.com/watch?v=J4tlyR742GA&list=RDJ4tlyR742GA&start_radio=1"
-                            target="_blank" class="about_instructor_info_media_banner_play_btn">
+                        <div class="about_instructor_info_media_banner_play_btn open_video_popup">
                             <button class="play_btn" type="button">
                                 <span class="play_treangle"></span>
                             </button>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>

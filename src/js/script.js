@@ -28,6 +28,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows : false,
+        dots:true
     });
 });
 
@@ -45,11 +46,32 @@ $(document).ready(function(){
 const openPopUp = document.querySelector('.open_reg_popup');
 const closePopUp = document.querySelector('.close_reg_popup');
 const regPopup = document.querySelector('.popap_reg');
-console.log(typeof(regPopup))
-openPopUp.addEventListener('change', function(e){
+
+openPopUp.addEventListener('click', function(e){
     regPopup.classList.add('active');
 })
-
 closePopUp.addEventListener('click', () => {
     regPopup.classList.remove('active');
+})
+
+const openLoginPopUp = document.querySelector('.open_login_popup');
+const closeLoginPopUp = document.querySelector('.close_login_popup');
+const loginPopup = document.querySelector('.popap_login');
+
+openLoginPopUp.addEventListener('click', function(e){
+    loginPopup.classList.add('active');
+})
+closeLoginPopUp.addEventListener('click', () => {
+    loginPopup.classList.remove('active');
+})
+
+const openVideoPopUp = document.querySelector('.open_video_popup');
+const closeVideoPopUp = document.querySelector('.close_video_popup');
+const VideoPopup = document.querySelector('.media_popup');
+
+openVideoPopUp.addEventListener('click', function(e){
+    VideoPopup.classList.add('active');
+})
+closeVideoPopUp.addEventListener('click', () => {
+    VideoPopup.classList.remove('active');
 })
