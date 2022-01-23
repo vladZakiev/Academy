@@ -74,3 +74,40 @@ openVideoPopUp.addEventListener('click', function(e){
 closeVideoPopUp.addEventListener('click', () => {
     VideoPopup.classList.remove('active');
 })
+
+
+let regForm = document.querySelector('#reg');
+regForm.addEventListener('submit',function(e){
+    e.preventDefault();
+    let data = new FormData(this),
+        newUser = {
+            'First-name:' : data.get('first-name'),
+            'Last name:' : data.get('last-name'),
+            'Email:' : data.get('email'),
+            'Phone number:' : data.get('number')
+        }
+    console.log(newUser);
+})
+
+let trialForm = document.querySelector('#trial-form');
+trialForm.addEventListener('submit',function(e){
+    e.preventDefault();
+    let data = new FormData(this),
+        newTrial = {
+            'Name:' : data.get('name'),
+            'Email:' : data.get('email'),
+            'Phone number:' : data.get('number'),
+            'Option:' : data.get('option')
+        }
+    console.log(newTrial);
+})
+let subForm = document.querySelector('#sub-form');
+subForm.addEventListener('submit',function(e){
+    e.preventDefault();
+    let data = new FormData(this),
+        subscription = {
+            'Email:' : data.get('email'),
+        }
+    console.log(subscription);
+})
+

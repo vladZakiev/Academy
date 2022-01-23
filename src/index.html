@@ -25,12 +25,12 @@
                 <div class="popap_reg_wrapper_inner">
                     <h3 class="popap_reg_title">Registration</h3>
                     <p class="popap_reg_subtitle">Register on our website</p>
-                    <form class="popap_reg_form" action="#">
+                    <form class="popap_reg_form" action="#" id="reg">
                         <div class="popap_reg_form_fields">
-                            <input type="text" class="popap_reg_first_name reg_input" placeholder="First name">
-                            <input type="text" class="popap_reg_last_name reg_input" placeholder="Last name">
-                            <input type="email" class="popap_reg_email reg_input" placeholder="Your Email">
-                            <input type="number" class="popap_reg_phone reg_input" placeholder="Your Phone">
+                            <input name="first-name" type="text" class="popap_reg_first_name reg_input" placeholder="First name">
+                            <input name="last-name" type="text" class="popap_reg_last_name reg_input" placeholder="Last name">
+                            <input name="email" type="email" class="popap_reg_email reg_input" placeholder="Your Email">
+                            <input name="number" type="number" class="popap_reg_phone reg_input" placeholder="Your Phone">
                         </div>
                         <div class="popap_reg_form_btn">
                             <button class="popap_reg_form_btn_button" type="submit">Register</button>
@@ -314,14 +314,14 @@
                         <h3 class="trial_heading">30 DAY FREE TRIAL </h3>
                         <div class="trial_subheading">Sign up for your free 3-day trial today! All of you are welcome
                         </div>
-                        <form action="#" class="trial_form">
+                        <form action="#" class="trial_form" id="trial-form">
                             <div class="trial_form_name_input">
-                                <input class="input_style" type="text" id="name" name="name" placeholder="Your name">
+                                <input name="name" class="input_style" type="text" id="name" name="name" placeholder="Your name">
                             </div>
                             <div class="trial_form_details">
-                                <input class="input_style" type="email" id="email" name="email"
+                                <input name="email" class="input_style" type="email" id="email" name="email"
                                     placeholder="Email address">
-                                <input class="input_style" type="number" id="phone" name="phone"
+                                <input name="number" class="input_style" type="number" id="phone" name="phone"
                                     placeholder="Phone Number">
                             </div>
                             <div class="trial_form_options">
@@ -611,9 +611,9 @@
                         </div>
                         <div class="footer_info_subscription">
                             <h4 class="footer_info_subscription_heading">Subscribe Newsletter</h4>
-                            <form class="footer_info_subscription_form" action="#">
+                            <form class="footer_info_subscription_form" action="#" id="sub-form">
                                 <div class="footer_info_subscription_form_email">
-                                    <input class="footer_info_subscription_form_email_input" type="email"
+                                    <input name="email" class="footer_info_subscription_form_email_input" type="email"
                                         placeholder="Email address">
                                     <button class="footer_info_subscription_form_submit"
                                         type="submit">Subscribe</button>
