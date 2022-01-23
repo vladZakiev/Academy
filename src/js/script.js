@@ -41,3 +41,73 @@ $(document).ready(function(){
         nextArrow: '<span class="blog_slider_btn"><i class="fas fa-chevron-right"></i></span>',
     });
 });
+
+const openPopUp = document.querySelector('.open_reg_popup');
+const closePopUp = document.querySelector('.close_reg_popup');
+const regPopup = document.querySelector('.popap_reg');
+
+openPopUp.addEventListener('click', function(e){
+    regPopup.classList.add('active');
+})
+closePopUp.addEventListener('click', () => {
+    regPopup.classList.remove('active');
+})
+
+const openLoginPopUp = document.querySelector('.open_login_popup');
+const closeLoginPopUp = document.querySelector('.close_login_popup');
+const loginPopup = document.querySelector('.popap_login');
+
+openLoginPopUp.addEventListener('click', function(e){
+    loginPopup.classList.add('active');
+})
+closeLoginPopUp.addEventListener('click', () => {
+    loginPopup.classList.remove('active');
+})
+
+const openVideoPopUp = document.querySelector('.open_video_popup');
+const closeVideoPopUp = document.querySelector('.close_video_popup');
+const VideoPopup = document.querySelector('.media_popup');
+
+openVideoPopUp.addEventListener('click', function(e){
+    VideoPopup.classList.add('active');
+})
+closeVideoPopUp.addEventListener('click', () => {
+    VideoPopup.classList.remove('active');
+})
+
+
+let regForm = document.querySelector('#reg');
+regForm.addEventListener('submit',function(e){
+    e.preventDefault();
+    let data = new FormData(this),
+        newUser = {
+            'First-name:' : data.get('first-name'),
+            'Last name:' : data.get('last-name'),
+            'Email:' : data.get('email'),
+            'Phone number:' : data.get('number')
+        }
+    console.log(newUser);
+})
+
+let trialForm = document.querySelector('#trial-form');
+trialForm.addEventListener('submit',function(e){
+    e.preventDefault();
+    let data = new FormData(this),
+        newTrial = {
+            'Name:' : data.get('name'),
+            'Email:' : data.get('email'),
+            'Phone number:' : data.get('number'),
+            'Option:' : data.get('option')
+        }
+    console.log(newTrial);
+})
+let subForm = document.querySelector('#sub-form');
+subForm.addEventListener('submit',function(e){
+    e.preventDefault();
+    let data = new FormData(this),
+        subscription = {
+            'Email:' : data.get('email'),
+        }
+    console.log(subscription);
+})
+

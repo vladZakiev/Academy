@@ -19,6 +19,60 @@
 </head>
 
 <body>
+    <div class="popap_reg">
+        <div class="container">
+            <div class="popap_reg_wrapper">
+                <div class="popap_reg_wrapper_inner">
+                    <h3 class="popap_reg_title">Registration</h3>
+                    <p class="popap_reg_subtitle">Register on our website</p>
+                    <form class="popap_reg_form" action="#" id="reg">
+                        <div class="popap_reg_form_fields">
+                            <input name="first-name" type="text" class="popap_reg_first_name reg_input" placeholder="First name">
+                            <input name="last-name" type="text" class="popap_reg_last_name reg_input" placeholder="Last name">
+                            <input name="email" type="email" class="popap_reg_email reg_input" placeholder="Your Email">
+                            <input name="number" type="number" class="popap_reg_phone reg_input" placeholder="Your Phone">
+                        </div>
+                        <div class="popap_reg_form_btn">
+                            <button class="popap_reg_form_btn_button" type="submit">Register</button>
+                        </div>
+                    </form>
+                    <div class="popap_reg_exit">
+                        <span class="popap_reg_exit_act close_reg_popup">X</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popap_login">
+        <div class="container">
+            <div class="popap_login_wrapper">
+                <div class="popap_login_wrapper_inner">
+                    <h3 class="popap_login_title">Sign In</h3>
+                    <p class="popap_login_subtitle">Sign In on our website</p>
+                    <form class="popap_login_form" action="#">
+                        <div class="popap_login_form_fields">
+                            <input type="email" class="popap_login_email reg_input" placeholder="Your Email">
+                            <input type="password" class="popap_login_password reg_input" placeholder="Your Password">
+                        </div>
+                        <div class="popap_login_form_btn">
+                            <button class="popap_login_form_btn_button" type="submit">Sign In</button>
+                        </div>
+                    </form>
+                    <div class="popap_login_exit">
+                        <span class="popap_login_exit_act close_login_popup">X</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="media_popup close_video_popup">
+        <div class="media_popup_wrapper">
+            <iframe class="media_popup_video" width="560" height="315" src="https://www.youtube.com/embed/ESVu7Z0nx-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="media_popup_exit">
+                <span class="media_popup_exit_act close_login_popup">X</span>
+            </div>
+        </div>
+    </div>
     <div class="header">
         <div class="container">
             <div class="header_wrapper">
@@ -45,11 +99,12 @@
                             Cart
                         </button>
                     </div>
-                    <div class="header_auth_button">
-                        <select class="auth_select" name="Login" id="login_register">
-                            <option class="select_option" value="logout">Login</option>
-                            <option class="select_option" value="logout">Register</option>
-                        </select>
+                    <div class="header_auth">
+                        <button class="header_auth_button">Sign up</button>
+                        <div  class="auth_select" name="Login" id="login_register">
+                            <a href="#" class="select_option open_login_popup" value="login">Login</a>
+                            <a href="#" class="select_option open_reg_popup" value="register">Register</a>
+                        </div>
                     </div>
                     <div class="header_hamburger_button"><a href="#"></a>
                         <div class="header_hamburger_button_wrapper">
@@ -62,7 +117,6 @@
             </div>
         </div>
     </div>
-
     <div class="main">
         <div class="container">
             <div class="main_wrapper">
@@ -240,12 +294,11 @@
                             <img class="about_instructor_info_media_banner_img" src="img/instrctor.jpg"
                                 alt="instructor">
                         </div>
-                        <a href="https://www.youtube.com/watch?v=J4tlyR742GA&list=RDJ4tlyR742GA&start_radio=1"
-                            target="_blank" class="about_instructor_info_media_banner_play_btn">
+                        <div class="about_instructor_info_media_banner_play_btn open_video_popup">
                             <button class="play_btn" type="button">
                                 <span class="play_treangle"></span>
                             </button>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -261,14 +314,14 @@
                         <h3 class="trial_heading">30 DAY FREE TRIAL </h3>
                         <div class="trial_subheading">Sign up for your free 3-day trial today! All of you are welcome
                         </div>
-                        <form action="#" class="trial_form">
+                        <form action="#" class="trial_form" id="trial-form">
                             <div class="trial_form_name_input">
-                                <input class="input_style" type="text" id="name" name="name" placeholder="Your name">
+                                <input name="name" class="input_style" type="text" id="name" name="name" placeholder="Your name">
                             </div>
                             <div class="trial_form_details">
-                                <input class="input_style" type="email" id="email" name="email"
+                                <input name="email" class="input_style" type="email" id="email" name="email"
                                     placeholder="Email address">
-                                <input class="input_style" type="number" id="phone" name="phone"
+                                <input name="number" class="input_style" type="number" id="phone" name="phone"
                                     placeholder="Phone Number">
                             </div>
                             <div class="trial_form_options">
@@ -558,9 +611,9 @@
                         </div>
                         <div class="footer_info_subscription">
                             <h4 class="footer_info_subscription_heading">Subscribe Newsletter</h4>
-                            <form class="footer_info_subscription_form" action="#">
+                            <form class="footer_info_subscription_form" action="#" id="sub-form">
                                 <div class="footer_info_subscription_form_email">
-                                    <input class="footer_info_subscription_form_email_input" type="email"
+                                    <input name="email" class="footer_info_subscription_form_email_input" type="email"
                                         placeholder="Email address">
                                     <button class="footer_info_subscription_form_submit"
                                         type="submit">Subscribe</button>
@@ -589,9 +642,9 @@
         </div>
 
     </div>
+    
+</body>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
-</body>
-
 </html>
