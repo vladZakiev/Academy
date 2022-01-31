@@ -12,6 +12,13 @@
         align-items: center;
         padding-right: 100px;
         margin-top: 50px;
+        &_image{
+            width: 80px;
+            cursor: pointer;
+            img{
+                width: inherit;
+            }
+        }
     }
     &_content{
         height: 320px;
@@ -54,4 +61,7 @@
         padding-left: 100px;
         margin-top: 50px;
     }
+}
+.testimonials_avatars_image.active{
+    width: 100px;
 }
