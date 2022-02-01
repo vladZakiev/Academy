@@ -59,6 +59,24 @@ $(document).ready(function(){
     });
 });
 
+const testimonials = document.querySelector('.testimonials_avatars');
+const testimonialsAvatar = document.querySelector('.testimonials_avatars_image')
+for (let i = 0; i < testimonialsAvatar; i++) {
+    testimonialsAvatar[i].addEventListener("click", function() {
+    let current = document.querySelector(".active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+  }
+console.log(testimonialsAvatar)
+
+
+// const getActiveTestimonials = document.querySelector('.testimonials_avatars_image');
+
+// getActiveTestimonials.addEventListener('click', function(e){
+//     getActiveTestimonials.classList.add('active');
+// })
+
 
 const openPopUp = document.querySelector('.open_reg_popup');
 const closePopUp = document.querySelector('.close_reg_popup');
