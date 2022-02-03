@@ -58,24 +58,6 @@ $(document).ready(function(){
     });
 });
 
-// const testimonials = document.querySelector('.slick-list');
-// const testimonialsAvatar = document.querySelector('.testimonials_avatars_image')
-// for (let i = 0; i < testimonialsAvatar; i++) {
-//     testimonialsAvatar[i].addEventListener("click", function() {
-//     let current = document.querySelector(".active");
-//     current[0].className = current[0].className.replace(" active", "");
-//     this.className += " active";
-//     });
-//   }
-// console.log(testimonialsAvatar)
-
-
-// const getActiveTestimonials = document.querySelector('.testimonials_avatars_image');
-
-// getActiveTestimonials.addEventListener('click', function(e){
-//     getActiveTestimonials.classList.add('active');
-// })
-
 
 const openPopUp = document.querySelector('.open_reg_popup');
 const closePopUp = document.querySelector('.close_reg_popup');
@@ -146,3 +128,12 @@ subForm.addEventListener('submit',function(e){
     console.log(subscription);
 })
 
+let a = document.querySelectorAll('.testimonials_avatars .testimonials_avatars_image .testimonials_avatars_image_img');
+for (let i = 0, length = a.length; i < length; i++){
+    a[i].onclick = function(){
+        let b = document.querySelector('.testimonials_avatars.testimonials_avatars_image.active');
+        if (b) b.classList.remove('active');
+        this.parentNode.classList.add('active');
+        console.log(b)
+    }
+}
