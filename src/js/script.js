@@ -35,14 +35,13 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.testimonials_avatars').slick({
         vertical: true,
-        verticalSwiping: true,
         lazyLoad: 'ondemand',
         slidesToShow: 3,
         slidesToScroll: 1,
-        arrows : false,
-        infinite: true,
-        asNavFor: '.testimonials_slider',
         centerMode: true,
+        centerPadding: '40px',
+        arrows : false,
+        asNavFor: '.testimonials_slider',
         focusOnSelect: true
     });
 });
@@ -59,16 +58,16 @@ $(document).ready(function(){
     });
 });
 
-const testimonials = document.querySelector('.testimonials_avatars');
-const testimonialsAvatar = document.querySelector('.testimonials_avatars_image')
-for (let i = 0; i < testimonialsAvatar; i++) {
-    testimonialsAvatar[i].addEventListener("click", function() {
-    let current = document.querySelector(".active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-    });
-  }
-console.log(testimonialsAvatar)
+// const testimonials = document.querySelector('.slick-list');
+// const testimonialsAvatar = document.querySelector('.testimonials_avatars_image')
+// for (let i = 0; i < testimonialsAvatar; i++) {
+//     testimonialsAvatar[i].addEventListener("click", function() {
+//     let current = document.querySelector(".active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//     });
+//   }
+// console.log(testimonialsAvatar)
 
 
 // const getActiveTestimonials = document.querySelector('.testimonials_avatars_image');
