@@ -15,8 +15,11 @@
         &_image{
             width: 80px;
             cursor: pointer;
+            &.active{
+                width: 100px;
+            }
             img{
-                width: inherit;
+                width: 100%;
             }
         }
     }
@@ -61,7 +64,4 @@
         padding-left: 100px;
         margin-top: 50px;
     }
-}
-.active{
-    background-color: red;
 }
