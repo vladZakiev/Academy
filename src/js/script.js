@@ -133,17 +133,19 @@ subForm.addEventListener('submit',function(e){
 //     a[i].onclick = function(){
 //         let b = document.querySelector('.testimonials_avatars .testimonials_avatars_image.active');
 //         if (b) b.classList.remove('active');
-//         b.classList.add('active');
+//         this.parentNode.classList.add('active');
 //         console.log(b)
 //     }
 // }
-var header = document.querySelectorAll('.testimonials_avatars .testimonials_avatars_image .testimonials_avatars_image_img');
-var btns = document.querySelector('.testimonials_avatars .testimonials_avatars_image');
+
+
+var header = document.querySelector(".testimonials_avatars");
+var btns = header.querySelectorAll(".testimonials_avatars_image");
+console.log(btns)
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  current[0].className = current[0].className.replace(" active", "");
+  var current = document.querySelector(".active");
+  current[0].className = current[0].className.remove(" active");
   this.className += " active";
   });
 }
-console.log(header)
