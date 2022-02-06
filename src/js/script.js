@@ -128,24 +128,14 @@ subForm.addEventListener('submit',function(e){
     console.log(subscription);
 })
 
-// let a = document.querySelectorAll('.testimonials_avatars .testimonials_avatars_image .testimonials_avatars_image_img');
-// for (let i = 0, length = a.length; i < length; i++){
-//     a[i].onclick = function(){
-//         let b = document.querySelector('.testimonials_avatars .testimonials_avatars_image.active');
-//         if (b) b.classList.remove('active');
-//         this.parentNode.classList.add('active');
-//         console.log(b)
-//     }
-// }
-
-
-var header = document.querySelector(".testimonials_avatars");
-var btns = header.querySelectorAll(".testimonials_avatars_image");
-console.log(btns)
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-  var current = document.querySelector(".active");
-  current[0].className = current[0].className.remove(" active");
-  this.className += " active";
-  });
+let a = document.querySelectorAll('.testimonials_avatars .testimonials_avatars_image .testimonials_avatars_image_img');
+for (let i = 0, length = a.length; i < length; i++){
+    a[i].onclick = function(){
+        let b = document.querySelector('.testimonials_avatars .testimonials_avatars_image.active');
+        if (b) b.classList.remove('active');
+        this.parentNode.classList.add('active');
+        console.log(b)
+    }
 }
+
+
