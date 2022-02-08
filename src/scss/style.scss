@@ -12,7 +12,7 @@ $first-color:#ffc03f;
 $second-color:#64ccf3;
 
 .container{
-    width: 1230px;
+    max-width: 1230px;
     margin: 0 auto;
 }
 @import 'header';

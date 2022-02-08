@@ -15,4 +15,67 @@
     .about_instructor_info_media_banner_play_btn{
         top: 23%;
     }
+    .trial_shape{
+        margin-left: -50px;
+    }
+    .blog_carousel{
+        width: 1000px;
+    }
+    .blog_carousel_item_card{
+        width: 310px;
+        &_image{
+            width: 310px;
+        }
+        &_info{
+            padding: 15px;
+        }
+    }
+    
+}
+@media(max-width:1024px){
+    .main_shape{
+        img{
+            width: 440px;
+        }
+        margin-right: 15px;
+        margin-top: 235px;
+    }
+    .main_title_text{
+        font-size: 52px;
+        &-2{
+            font-size: 36px;
+        }
+    }
+    .cart_button_text{
+        display: none;
+    }
+    .header_cart_button .cart_button_icon{
+        margin-right: 0px;
+    }
+    .header_auth_button::before{
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        content: "\f007";
+    }
+    .header_auth_button::after{
+        display: none;
+    }
+    .header_auth_button_text{
+        display: none;
+    }
+    .header_auth_button{
+        min-width: 55px;
+    }
+    .header_menu_item{
+        padding-right: 20px;
+    }
+    .header_logo{
+        margin-left: 15px;
+    }
+    .header_inner_nav{
+        margin-right: 15px;
+    }
+    .main_content{
+        margin-left: 15px;
+    }
 }
