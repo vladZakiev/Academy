@@ -6,7 +6,7 @@
         margin-left: 13px;
     }
     .classes_carousel_wrapper{
-        min-width: 905px;
+        max-width: 905px;
     }
     .about_instructor_info_media_banner_img{
         width:515px;
@@ -77,5 +77,12 @@
     }
     .main_content{
         margin-left: 15px;
+    }
+    .classes_carousel_wrapper{
+        max-width: 750px;
+    }
+    .classes_carousel_item{
+        width: 150px;
+        margin-left: 70px;
     }
 }
