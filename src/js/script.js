@@ -73,6 +73,7 @@ const openPopUp = document.querySelector('.open_reg_popup');
 const closePopUp = document.querySelector('.close_reg_popup');
 const regPopup = document.querySelector('.popap_reg');
 
+
 openPopUp.addEventListener('click', function (e) {
     regPopup.classList.add('active');
 })
@@ -104,6 +105,7 @@ closeVideoPopUp.addEventListener('click', () => {
 
 
 let regForm = document.querySelector('#reg');
+let infoPopup = document.querySelector('.info_popup');
 regForm.addEventListener('submit', function (e) {
     e.preventDefault();
     let data = new FormData(this),
@@ -114,7 +116,30 @@ regForm.addEventListener('submit', function (e) {
             'Phone number:': data.get('number')
         }
     console.log(newUser);
+    regPopup.classList.remove('active');
+    infoPopup.classList.add('active');
+    document.querySelector(".data_first_name").innerHTML = newUser["First-name:"];
+    document.querySelector(".data_last_name").innerHTML = newUser["Last name:"];
+    document.querySelector(".data_email").innerHTML = newUser["Email:"];
+    document.querySelector(".data_phone_number").innerHTML = newUser["Phone number:"];
+    if (newUser["First-name:"] === ""){
+        document.querySelector(".data_error").innerHTML = "Error! Fill all fields!";
+    }
+    if(newUser["Last name:"] === "")
+        document.querySelector(".data_error").innerHTML = "Error! Fill all fields!";
+    else if(newUser["Email:"] === "")
+        document.querySelector(".data_error").innerHTML = "Error! Fill all fields!";
+    else if(newUser["Phone number:"] === "")
+        document.querySelector(".data_error").innerHTML = "Error! Fill all fields!";
+        else{
+            
+        }
 })
+const closeInfoPopup = document.querySelector('.info_popup_close');
+closeInfoPopup.addEventListener('click', () => {
+    infoPopup.classList.remove('active');
+})
+
 
 let trialForm = document.querySelector('#trial-form');
 trialForm.addEventListener('submit', function (e) {

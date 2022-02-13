@@ -102,3 +102,12 @@
         justify-content: center;
         align-items: center;
 }
+.test{
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+    &.active{
+        display: block;
+    }
+}
