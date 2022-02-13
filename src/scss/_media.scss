@@ -78,11 +78,65 @@
     .main_content{
         margin-left: 15px;
     }
-    .classes_carousel_wrapper{
-        max-width: 750px;
+    .classes_wrapper{
+        flex-direction: column;
     }
-    .classes_carousel_item{
-        width: 150px;
-        margin-left: 70px;
+    .classes_info{
+        max-width: 400px;
+        align-items: start;
+    }
+    .classes_carousel{
+        margin: 0px;
+    }
+    .classes_carousel_wrapper .prev-btn{
+        left: 93%;
+        top: -45px;
+    }
+    .classes_carousel_wrapper .next-btn{
+        left: 85%;
+        top: -45px;
+    }
+    .trial_shape{
+        display: none;
+    }
+    .trial_wrapper{
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .about_instructor{
+    &::before{
+        content: '';
+        display: none;
+    }
+    &::after{
+        display: none;
+    }
+    }
+    .events_wrapper{
+        flex-direction: column;
+    }
+    .events_info{
+        max-width: 400px;
+        align-items: start;
+    }
+    .events_carousel_wrapper .prev-btn{
+        left: 93%;
+        top: -45px;
+    }
+    .events_carousel_wrapper .next-btn{
+        left: 85%;
+        top: -45px;
+    }
+    .events_carousel{
+        margin-left: 0px;
+    }
+    .events_carousel_item{
+        padding: 29px;
+    }
+    .testimonials_wrapper{
+        flex-direction: column;
+    }
+    .testimonials_avatars{
+        height: 140px;
     }
 }

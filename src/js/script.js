@@ -6,6 +6,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         prevArrow: '<span class="prev-btn slider_btn"><i class="fas fa-chevron-right"></i></span>',
         nextArrow: '<span class="next-btn slider_btn"><i class="fas fa-chevron-left"></i></span>',
+        accessibility: false,
         responsive: [
             {
             breakpoint: 1030,
