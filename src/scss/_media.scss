@@ -197,3 +197,63 @@
         left: -6%;
     }
 }
+@media(max-width:768px){
+    .header{
+        display: none;
+    }
+    .main_shape{
+        display: none;
+    }
+    .main_content{
+        justify-content: center;
+        align-items: center;
+    }
+    .main_subtitle_text{
+        text-align: center;
+    }
+    .classes_info{
+        margin-left: 35px;
+    }
+    .classes_carousel_items{
+        width: 670px;
+    }
+    .classes_carousel_wrapper .next-btn{
+        left: 76%;
+    }
+    .classes_carousel_wrapper .prev-btn{
+        left: 86%;
+    }
+    .icon_box{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon_box_info{
+        text-align: center;
+    }
+    .about_instructor_info_media_banner_img{
+        position: relative;
+        margin-top: 0px;
+    }
+    .about_instructor_wrapper{
+        flex-direction: column;
+    }
+    .about_instructor_info{
+        margin-top: 50px;
+    }
+    .about_instructor_info_media_banner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about_instructor_wrapper{
+        justify-content: center;
+        align-items: center;
+    }
+    .about_instructor_info_media_banner_play_btn{
+        left: 8%;
+    }
+    .trial_wrapper{
+        margin-top: 50px;
+    }
+}
