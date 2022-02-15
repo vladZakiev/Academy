@@ -33,7 +33,24 @@ $(document).ready(function () {
         slidesToShow: 3,
         slidesToScroll: 1,
         prevArrow: '<span class="prev-btn slider_btn"><i class="fas fa-chevron-right"></i></span>',
-        nextArrow: '<span class="next-btn slider_btn"><i class="fas fa-chevron-left"></i></span>'
+        nextArrow: '<span class="next-btn slider_btn"><i class="fas fa-chevron-left"></i></span>',
+        responsive: [
+            {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                mobileFirst: true,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+        }
+    ]
     });
     //testimonials slider Reviews
     $('.testimonials_slider').slick({
