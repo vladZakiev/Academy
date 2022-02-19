@@ -7,32 +7,31 @@ $(document).ready(function () {
         slidesToScroll: 1,
         prevArrow: '<span class="prev-btn slider_btn"><i class="fas fa-chevron-right"></i></span>',
         nextArrow: '<span class="next-btn slider_btn"><i class="fas fa-chevron-left"></i></span>',
-        accessibility: false,
-        responsive: [
+        variableWidth:true,
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
             {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
+                breakpoint: 768,
+                settings: {
+                    mobileFirst: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
                 }
             },
-        {
-            breakpoint: 768,
-            settings: {
-                mobileFirst: true,
-                slidesToShow: 2,
-                slidesToScroll: 1,
+            {
+                breakpoint: 320,
+                settings: {
+                    mobileFirst: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
                 }
             },
-        {
-            breakpoint: 319,
-            settings: {
-                mobileFirst: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                    }
-        },
-    ]
+        ]
     });
     //events carousel
     $('.events_carousel_items').slick({
@@ -42,23 +41,22 @@ $(document).ready(function () {
         slidesToScroll: 1,
         prevArrow: '<span class="prev-btn slider_btn"><i class="fas fa-chevron-right"></i></span>',
         nextArrow: '<span class="next-btn slider_btn"><i class="fas fa-chevron-left"></i></span>',
-        responsive: [
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
             {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
+                breakpoint: 768,
+                settings: {
+                    mobileFirst: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
             }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                mobileFirst: true,
-                slidesToShow: 2,
-                slidesToScroll: 1,
-            }
-        }
-    ]
+        ]
     });
     //testimonials slider Reviews
     $('.testimonials_slider').slick({

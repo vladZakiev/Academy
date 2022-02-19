@@ -381,5 +381,14 @@
     .classes_carousel_wrapper{
         width: 100%;
     }
+    .classes{
+        &::before{
+            content: '';
+            min-width: 320px;
+        }
+    }
+    .classes_carousel_items{
+        width: 320px;
         
+    }
 }
