@@ -391,4 +391,14 @@
         width: 320px;
         
     }
+    .icon_boxes_wrapper{
+        flex-direction: column;
+    }
+    .icon_box{
+        margin-bottom: 25px;
+        justify-content: center;
+    }
+    .icon_boxes .icon_box_icon{
+        margin-right: 0;
+    }
 }
