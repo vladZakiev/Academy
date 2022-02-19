@@ -6,7 +6,6 @@
         margin-left: 13px;
     }
     .classes_carousel_wrapper{
-        max-width: 905px;
     }
     .about_instructor_info_media_banner_img{
         width:515px;
@@ -359,4 +358,28 @@
         font-size: 12px;
         text-align: center;
     }
+    .classes_info_title{
+        font-size: 16px;
+    }
+    .classes_info_subtitle{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .classes_info{
+        max-width: 270px;
+    }
+    
+    .next-btn.slider_btn.slick-arrow{
+        display: none !important;
+    }
+    .prev-btn.slider_btn.slick-arrow{
+        display: none !important;
+    }
+    .classes_carousel{
+        max-width: 320px;
+    }
+    .classes_carousel_wrapper{
+        width: 100%;
+    }
+        
 }

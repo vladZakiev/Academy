@@ -14,16 +14,24 @@ $(document).ready(function () {
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
-            }
-        },
+                }
+            },
         {
             breakpoint: 768,
             settings: {
                 mobileFirst: true,
                 slidesToShow: 2,
                 slidesToScroll: 1,
-            }
-        }
+                }
+            },
+        {
+            breakpoint: 319,
+            settings: {
+                mobileFirst: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                    }
+        },
     ]
     });
     //events carousel
