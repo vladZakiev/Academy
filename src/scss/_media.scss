@@ -318,7 +318,7 @@
         }
     }
 }
-@media(max-width:320px){
+@media(max-width:425px){
     .main{
         max-height: 430px;
     }
@@ -400,5 +400,146 @@
     }
     .icon_boxes .icon_box_icon{
         margin-right: 0;
+    }
+    .about_instructor_info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about_instructor_info_heading{
+        font-size: 16px;
+    }
+    .about_instructor_info_subheading{
+        font-size: 14px;
+        text-align: center;
+        width: 300px;
+    }
+    .about_instructor_info_descr{
+        text-align: center;
+        width: 300px;
+        .text_paragraph{
+            font-size: 14px;
+        }
+    }
+    .about_instructor_info_more{
+        flex-direction: column;
+    }
+    .about_instructor_info_media{
+        width: 300px;
+    }
+    .about_instructor_info_media_banner_img{
+        width: 300px;
+    }
+    .about_instructor_info_media_banner_play_btn{
+        left: 38%;
+        top: 38%;
+    }
+    .trial_content{
+        width: 300px;
+        margin-left: 0;
+    }
+    .trial_heading{
+        text-align: center;
+        font-size: 16px;
+    }
+    .trial_subheading{
+        font-size: 14px;
+        text-align: center;
+    }
+    .trial_form_name_input{
+        .input_style{
+            width: 300px;
+        }
+        
+    }
+    .trial_form_details{
+        flex-direction: column;
+    }
+    .trial_form_details .input_style{
+        width: 300px;
+        margin-bottom: 30px;
+    }
+    .trial_form_options_option{
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    .option_label{
+        margin-bottom: 30px;
+    }
+    .trial_form_submit_btn{
+        width: 250px;
+    }
+    .trial_form_submit{
+        display: flex;
+        justify-content: center;
+    }
+    .events_info_title{
+        font-size: 16px;
+    }
+    .events_info_subtitle{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .events_info{
+        max-width: 270px;
+    }
+    
+    .next-btn.slider_btn.slick-arrow{
+        display: none !important;
+    }
+    .prev-btn.slider_btn.slick-arrow{
+        display: none !important;
+    }
+    .events_carousel{
+        max-width: 320px;
+    }
+    .events_carousel_wrapper{
+        width: 100%;
+    }
+    .events{
+        &::before{
+            content: '';
+            min-width: 320px;
+        }
+    }
+    .events_carousel_items{
+        width: 320px;
+    }
+    .testimonials_content{
+        width: 320px;
+    }
+    .testimonials_heading{
+        font-size: 16px;
+    }
+    .testimonials_slider_slide_review{
+        font-size: 14px;
+        line-height: 21px;
+        width: 300px;
+        padding-left: 7px;
+    }
+    .testimonials_slider_slide_content{
+        width: 320px;
+    }
+    
+    .footer_info_work_hours{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_info_work_hours_info{
+        width: 320px;
+        align-items: center;
+    }
+    .footer_info_media{
+        align-items: center;
+        border: none;
+    }
+    .footer_info_subscription{
+        display: none;
+    }
+    .about_instructor_info{
+        width: 320px;
+        padding: 0;
     }
 }
