@@ -1,3 +1,4 @@
+<?php $db_connect = new mysqli('localhost' , 'root' , 'root' , 'academy');?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,9 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/icons.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="src/css/slick.css">
+    <link rel="stylesheet" href="src/css/icons.css">
+    <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,7 +48,7 @@
                             <input name="first-name" type="text" class="popap_reg_first_name reg_input" placeholder="First name">
                             <input name="last-name" type="text" class="popap_reg_last_name reg_input" placeholder="Last name">
                             <input name="email" type="email" class="popap_reg_email reg_input" placeholder="Your Email">
-                            <input name="number" type="number" class="popap_reg_phone reg_input" placeholder="Your Phone">
+                            <input name="password" type="password" class="popap_reg_phone reg_input" placeholder="Password">
                         </div>
                         <div class="popap_reg_form_btn">
                             <button class="popap_reg_form_btn_button" type="submit">Register</button>
@@ -94,7 +95,7 @@
         <div class="container">
             <div class="header_wrapper">
                 <div class="header_logo">
-                    <img class="header_logo_img" src="img/logo.png" alt="betop_logo">
+                    <img class="header_logo_img" src="src/img/logo.png" alt="betop_logo">
                 </div>
                 <div class="header_menu">
                     <ul class="header_menu_items">
@@ -154,7 +155,7 @@
                     </div>
                 </div>
                 <div class="main_shape">
-                    <img src="img/shape.svg" alt="Shape">
+                    <img src="src/img/shape.svg" alt="Shape">
                 </div>
             </div>
 
@@ -177,7 +178,7 @@
                             <div class="classes_carousel_items">
                                 <div class="classes_carousel_item">
                                     <div class="classes_carousel_item_image">
-                                        <img src="img/slide.jpg" alt="slide" class="classes_carousel_item_image-img">
+                                        <img src="src/img/slide.jpg" alt="slide" class="classes_carousel_item_image-img">
                                     </div>
                                     <div class="classes_carousel_item_info">
                                         <div class="classes_carousel_item_price">
@@ -192,7 +193,7 @@
                                 </div>
                                 <div class="classes_carousel_item">
                                     <div class="classes_carousel_item_image">
-                                        <img src="img/slide.jpg" alt="slide" class="classes_carousel_item_image-img">
+                                        <img src="src/img/slide.jpg" alt="slide" class="classes_carousel_item_image-img">
                                     </div>
                                     <div class="classes_carousel_item_info">
                                         <div class="classes_carousel_item_price">
@@ -207,7 +208,7 @@
                                 </div>
                                 <div class="classes_carousel_item">
                                     <div class="classes_carousel_item_image">
-                                        <img src="img/slide.jpg" alt="slide" class="classes_carousel_item_image-img">
+                                        <img src="src/img/slide.jpg" alt="slide" class="classes_carousel_item_image-img">
                                     </div>
                                     <div class="classes_carousel_item_info">
                                         <div class="classes_carousel_item_price">
@@ -222,7 +223,7 @@
                                 </div>
                                 <div class="classes_carousel_item">
                                     <div class="classes_carousel_item_image">
-                                        <img src="img/slide.jpg" alt="slide" class="classes_carousel_item_image-img">
+                                        <img src="src/img/slide.jpg" alt="slide" class="classes_carousel_item_image-img">
                                     </div>
                                     <div class="classes_carousel_item_info">
                                         <div class="classes_carousel_item_price">
@@ -246,21 +247,21 @@
             <div class="container">
                 <div class="icon_boxes_wrapper">
                     <div class="icon_box">
-                        <div class="icon_box_icon"><img src="icons/clock_icon.png" alt="clock"></div>
+                        <div class="icon_box_icon"><img src="src/icons/clock_icon.png" alt="clock"></div>
                         <div class="icon_box_info">
                             <h4 class="icon_box_info_heading">Working hours</h4>
                             <div class="icon_box_info_text">Everyday 5 AM to 9 PM</div>
                         </div>
                     </div>
                     <div class="icon_box">
-                        <div class="icon_box_icon"><img src="icons/phone_icon.png" alt="phone"></div>
+                        <div class="icon_box_icon"><img src="src/icons/phone_icon.png" alt="phone"></div>
                         <div class="icon_box_info">
                             <h4 class="icon_box_info_heading">Call for any query</h4>
                             <div class="icon_box_info_text">9996 - 847-578 5476 - 654-876</div>
                         </div>
                     </div>
                     <div class="icon_box">
-                        <div class="icon_box_icon"><img src="icons/address_icon.png" alt="adress"></div>
+                        <div class="icon_box_icon"><img src="src/icons/address_icon.png" alt="adress"></div>
                         <div class="icon_box_info">
                             <h4 class="icon_box_info_heading">Adress</h4>
                             <div class="icon_box_info_text">9358 Cottage St. Fairburn, GA 30213 </div>
@@ -285,7 +286,7 @@
                                 aut fugit, sed quia consequuntur</p>
                         </div>
                         <div class="about_instructor_info_more">
-                            <div class="about_instructor_info_more_sign"><img src="img/sign.png" alt="sign"></div>
+                            <div class="about_instructor_info_more_sign"><img src="src/img/sign.png" alt="sign"></div>
                             <div class="about_instructor_info_more_socials">
                                 <a href="#">
                                     <div class="about_instructor_info_more_socials_facebook">
@@ -307,7 +308,7 @@
                     </div>
                     <div class="about_instructor_info_media">
                         <div class="about_instructor_info_media_banner">
-                            <img class="about_instructor_info_media_banner_img" src="img/instrctor.jpg"
+                            <img class="about_instructor_info_media_banner_img" src="src/img/instrctor.jpg"
                                 alt="instructor">
                         </div>
                         <div class="about_instructor_info_media_banner_play_btn open_video_popup">
@@ -324,7 +325,7 @@
             <div class="container">
                 <div class="trial_wrapper">
                     <div class="trial_shape">
-                        <img src="img/shape_2.svg" alt="shape" class="trail_shape_img">
+                        <img src="src/img/shape_2.svg" alt="shape" class="trail_shape_img">
                     </div>
                     <div class="trial_content">
                         <h3 class="trial_heading">30 DAY FREE TRIAL </h3>
@@ -345,16 +346,16 @@
                                 <div class="trial_form_options_option">
                                     <input type="radio" id="boxing" name="option" value="boxing">
                                     <label class="option_label" for="boxing"><img class="option_icon"
-                                            src="icons/icon_boxing.png" alt="boxing">Boxing</label>
+                                            src="src/icons/icon_boxing.png" alt="boxing">Boxing</label>
                                     <input type="radio" id="karate" name="option" value="karate">
                                     <label class="option_label" for="karate"><img class="option_icon"
-                                            src="icons/icon_karate.png" alt="karate">Karate</label>
+                                            src="src/icons/icon_karate.png" alt="karate">Karate</label>
                                     <input type="radio" id="cross-fintess" name="option" value="cross-fitness">
                                     <label class="option_label" for="cross-fintess"><img class="option_icon"
-                                            src="icons/icon_fitness.png" alt="others">Cross fitness</label>
+                                            src="src/icons/icon_fitness.png" alt="others">Cross fitness</label>
                                     <input type="radio" id="others" name="option" value="others">
                                     <label class="option_label" for="others"><img class="option_icon"
-                                            src="icons/icon_karate.png" alt="others">Others</label>
+                                            src="src/icons/icon_karate.png" alt="others">Others</label>
                                 </div>
                             </div>
                             <div class="trial_form_submit">
@@ -383,7 +384,7 @@
                             <div class="events_carousel_items">
                                 <div class="events_carousel_item">
                                     <div class="events_carousel_item_image">
-                                        <img src="img/slide.jpg" alt="slide" class="classes_carousel_item_image-img">
+                                        <img src="src/img/slide.jpg" alt="slide" class="classes_carousel_item_image-img">
                                     </div>
                                     <div class="events_carousel_item_info">
                                         <div class="events_carousel_item_date">
@@ -402,7 +403,7 @@
                                 </div>
                                 <div class="events_carousel_item">
                                     <div class="events_carousel_item_image">
-                                        <img src="img/slide.jpg" alt="slide" class="classes_carousel_item_image-img">
+                                        <img src="src/img/slide.jpg" alt="slide" class="classes_carousel_item_image-img">
                                     </div>
                                     <div class="events_carousel_item_info">
                                         <div class="events_carousel_item_date">
@@ -420,7 +421,7 @@
                                 </div>
                                 <div class="events_carousel_item">
                                     <div class="events_carousel_item_image">
-                                        <img src="img/slide.jpg" alt="slide" class="classes_carousel_item_image-img">
+                                        <img src="src/img/slide.jpg" alt="slide" class="classes_carousel_item_image-img">
                                     </div>
                                     <div class="events_carousel_item_info">
                                         <div class="events_carousel_item_date">
@@ -438,7 +439,7 @@
                                 </div>
                                 <div class="events_carousel_item">
                                     <div class="events_carousel_item_image">
-                                        <img src="img/slide.jpg" alt="slide" class="classes_carousel_item_image-img">
+                                        <img src="src/img/slide.jpg" alt="slide" class="classes_carousel_item_image-img">
                                     </div>
                                     <div class="events_carousel_item_info">
                                         <div class="events_carousel_item_date">
@@ -466,13 +467,13 @@
                 <div class="testimonials_wrapper">
                     <div class="testimonials_avatars">
                         <div class="testimonials_avatars_image active">
-                            <img src="img/testimonial.png" alt="testimonial" class="testimonials_avatars_image_img">
+                            <img src="src/img/testimonial.png" alt="testimonial" class="testimonials_avatars_image_img">
                         </div>
                         <div class="testimonials_avatars_image">
-                            <img src="img/testimonial.png" alt="testimonial" class="testimonials_avatars_image_img">
+                            <img src="src/img/testimonial.png" alt="testimonial" class="testimonials_avatars_image_img">
                         </div>
                         <div class="testimonials_avatars_image">
-                            <img src="img/testimonial.png" alt="testimonial" class="testimonials_avatars_image_img">
+                            <img src="src/img/testimonial.png" alt="testimonial" class="testimonials_avatars_image_img">
                         </div>
                     </div>
                     <div class="testimonials_content">
@@ -536,7 +537,7 @@
                         <span class="blog_slider_btn" style="display: none;"><i class="fas fa-chevron-right"></i></span>
                         <div class="blog_carousel_item">
                             <div class="blog_carousel_item_card">
-                                <img src="img/news.jpg" alt="news" class="blog_carousel_item_card_image">
+                                <img src="src/img/news.jpg" alt="news" class="blog_carousel_item_card_image">
                                 <div class="blog_carousel_item_card_info">
                                     <div class="blog_carousel_item_card_info_date">10-Oct-2018</div>
                                     <h4 class="blog_carousel_item_card_info_title">Motivation mania</h4>
@@ -547,7 +548,7 @@
                         </div>
                         <div class="blog_carousel_item">
                             <div class="blog_carousel_item_card">
-                                <img src="img/news.jpg" alt="news" class="blog_carousel_item_card_image">
+                                <img src="src/img/news.jpg" alt="news" class="blog_carousel_item_card_image">
                                 <div class="blog_carousel_item_card_info">
                                     <div class="blog_carousel_item_card_info_date">10-Oct-2018</div>
                                     <h4 class="blog_carousel_item_card_info_title">Motivation mania</h4>
@@ -558,7 +559,7 @@
                         </div>
                         <div class="blog_carousel_item">
                             <div class="blog_carousel_item_card">
-                                <img src="img/news.jpg" alt="news" class="blog_carousel_item_card_image">
+                                <img src="src/img/news.jpg" alt="news" class="blog_carousel_item_card_image">
                                 <div class="blog_carousel_item_card_info">
                                     <div class="blog_carousel_item_card_info_date">10-Oct-2018</div>
                                     <h4 class="blog_carousel_item_card_info_title">Motivation mania</h4>
@@ -569,7 +570,7 @@
                         </div>
                         <div class="blog_carousel_item">
                             <div class="blog_carousel_item_card">
-                                <img src="img/news.jpg" alt="news" class="blog_carousel_item_card_image">
+                                <img src="src/img/news.jpg" alt="news" class="blog_carousel_item_card_image">
                                 <div class="blog_carousel_item_card_info">
                                     <div class="blog_carousel_item_card_info_date">10-Oct-2018</div>
                                     <h4 class="blog_carousel_item_card_info_title">Motivation mania</h4>
@@ -589,7 +590,7 @@
                     <div class="footer_info">
                         <div class="footer_info_media">
                             <div class="footer_info_media_logo">
-                                <img src="img/logo.png" alt="logo" class="footer_info_media_logo_img">
+                                <img src="src/img/logo.png" alt="logo" class="footer_info_media_logo_img">
                             </div>
                             <div class="footer_info_media_title">Boxing trainer</div>
                             <div class="footer_info_media_socials">
@@ -659,7 +660,7 @@
 
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="src/js/slick.min.js"></script>
+    <script src="src/js/script.js"></script>
 </body>
 </html>
