@@ -9,7 +9,7 @@ include('../db_conectio.php') ;
             echo $error;
         }
         if($login && $password){
-            $query = "INSERT INTO `users` (`id`,`login`, `password`) VALUES (NULL, '$login', md5('$password'));";
+            $query = "INSERT INTO `users` (`id`,`login`, `password`) VALUES (NULL, '$login', '$password');";
             mysqli_query($db_connect , $query);
         }
     }
@@ -23,7 +23,7 @@ include('../db_conectio.php') ;
     <title>Document</title>
 </head>
 <body>
-    <form method="POST">
+    <form method="POST" name="registration">
         <input type="text" name="login" placeholder="Login">
         <input type="password" name="password" placeholder="Password">
         <input type="submit" name="registration" value="Registration">
