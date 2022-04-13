@@ -29,5 +29,11 @@ $second-color:#64ccf3;
 @import 'login_popap';
 @import 'media_popup';
 @import 'info_popup'; 
-@import 'admin';
 @import 'media';
+@import 'admin';
+
+.forms_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

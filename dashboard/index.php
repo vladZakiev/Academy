@@ -11,7 +11,7 @@
             echo $query;
         }
     }
-    ?>
+?>
 <?php require_once ('../header.php') ?>
 <body>
 <form method="POST">

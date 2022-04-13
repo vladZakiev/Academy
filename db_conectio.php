@@ -1,1 +1,1 @@
-<?php $db_connect = new mysqli('localhost' , 'root' , 'root' , 'academy');?>
+<?php $db_conectio = new mysqli('localhost' , 'root' , 'root' , 'academy');?>
