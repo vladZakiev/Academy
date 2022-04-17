@@ -2,4 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 500px;
+    flex-direction: column;
+}
+.admin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

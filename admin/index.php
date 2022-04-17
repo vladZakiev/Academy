@@ -45,17 +45,19 @@ session_start();
 ?>
 <?php require_once ('../header.php') ?>
 <body>
+    <div class="admin">
     <div class="forms_wrapper">
         <form class="form_auth" method="POST">
                 <input class="form_auth_input" type="text" name="login" placeholder="Login">
                 <input class="form_auth_inpput" type="password" name="password" placeholder="Password">
                 <input class="form_auth_btn" type="submit" name="signin" value="Login">
         </form>
-        <form method="POST" name="registration">
-            <input class="form_auth" type="text" name="login" placeholder="Login">
-            <input class="form_auth" type="password" name="password" placeholder="Password">
-            <input class="form_auth" type="submit" name="registration" value="Registration">
+        <form class="form_auth_reg" method="POST" name="registration">
+            <input class="form_auth_input" type="text" name="login" placeholder="Login">
+            <input class="form_auth_input" type="password" name="password" placeholder="Password">
+            <input class="form_auth_btn" type="submit" name="registration" value="Registration">
         </form>
+    </div>
     </div>
 </body>
 <?php require_once ('../footer.php') ?>
