@@ -1,0 +1,22 @@
+.posts{
+    &_wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        &_post{
+            width: 400px;
+            margin: 30px;
+            padding: 15px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            &_title{
+                text-transform: capitalize;
+                font-size: 24px;
+            }
+            &_content{
+                font-size: 16px;
+                text-transform: capitalize;
+            }
+        }
+    }
+    
+}

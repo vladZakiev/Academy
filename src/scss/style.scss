@@ -31,9 +31,5 @@ $second-color:#64ccf3;
 @import 'info_popup'; 
 @import 'media';
 @import 'admin';
-
-.forms_wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+@import 'dashboard';
+@import 'posts';
