@@ -28,7 +28,6 @@ session_start();
         $password = stripslashes($_REQUEST['password']);
         $password = mysqli_real_escape_string($db_connect, $password);
         $query    = "SELECT * FROM `users` WHERE login='$login' AND password='" . $password . "'";
-        echo $query;
         $result = mysqli_query($db_connect, $query);
         $rows = mysqli_num_rows($result);
         if (!empty($rows)) {
@@ -36,10 +35,7 @@ session_start();
             $_SESSION['login'] = $login;
             header("Location: ../dashboard");
         } else {
-            var_dump ($rows);
-            echo "<div class='form'>
-                <h3>Incorrect Username/password.</h3><br/>
-                <p>Try Again</p>";
+            $notice = 'Wrong password or login, try again!';
         }
 }
 ?>
@@ -47,13 +43,18 @@ session_start();
 <body>
     <div class="auth">
     <div class="forms_wrapper">
-        <h3>Login</h3>
+        <h3>Login If You have an account!</h3>
+        <br>
         <form class="form_auth" method="POST">
                 <input class="form_auth_input" type="text" name="login" placeholder="Login">
                 <input class="form_auth_input" type="password" name="password" placeholder="Password">
                 <input class="form_auth_btn" type="submit" name="signin" value="Login">
         </form>
-        <h3>Register</h3>
+        <h4 class="error"><?php if(isset($notice)) {
+            echo $notice;
+            } ;?></h4>
+        <h3>Register if you have not account!</h3>
+        <br>
         <form class="form_auth_reg" method="POST" name="registration">
             <input class="form_auth_input" type="text" name="login" placeholder="Login">
             <input class="form_auth_input" type="password" name="password" placeholder="Password">
@@ -63,3 +64,4 @@ session_start();
     </div>
 </body>
 <?php require_once ('../footer.php') ?>
+

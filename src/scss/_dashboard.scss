@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    margin-bottom: 100px;
 }
 .dashboard_post_form{
     display: flex;
@@ -52,4 +53,10 @@
 .publish_btn:hover{
     background-color: rgb(37, 153, 43);
     transition: 0.3s;
+}
+.all_posts{
+    margin-top: 15px;
+    font-size: 18px;
+    color: rgb(0, 152, 190);
+    font-weight: bold;
 }
