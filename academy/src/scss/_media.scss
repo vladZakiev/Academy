@@ -1,0 +1,545 @@
+@media (max-width:1440px){
+    .main_shape{
+        margin-left: 0px;
+    }
+    .classes_carousel {
+        margin-left: 13px;
+    }
+    .classes_carousel_wrapper{
+    }
+    .about_instructor_info_media_banner_img{
+        width:515px;
+        margin-top: 120px;
+    }
+    .about_instructor_info_media_banner_play_btn{
+        top: 23%;
+    }
+    .trial_shape{
+        margin-left: -50px;
+    }
+    .blog_carousel{
+        width: 1000px;
+    }
+    .blog_carousel_item_card{
+        width: 310px;
+        &_image{
+            width: 310px;
+        }
+        &_info{
+            padding: 15px;
+        }
+    }
+    
+}
+@media(max-width:1024px){
+    .main_shape{
+        img{
+            width: 440px;
+        }
+        margin-right: 15px;
+        margin-top: 235px;
+    }
+    .main_title_text{
+        font-size: 52px;
+        &-2{
+            font-size: 36px;
+        }
+    }
+    .cart_button_text{
+        display: none;
+    }
+    .header_cart_button .cart_button_icon{
+        margin-right: 0px;
+    }
+    .header_auth_button::before{
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        content: "\f007";
+    }
+    .header_auth_button::after{
+        display: none;
+    }
+    .header_auth_button_text{
+        display: none;
+    }
+    .header_auth_button{
+        min-width: 55px;
+    }
+    .header_menu_item{
+        padding-right: 20px;
+    }
+    .header_logo{
+        margin-left: 15px;
+    }
+    .header_inner_nav{
+        margin-right: 15px;
+    }
+    .main_content{
+        margin-left: 15px;
+    }
+    .classes_wrapper{
+        flex-direction: column;
+    }
+    .classes_info{
+        max-width: 400px;
+        align-items: start;
+    }
+    .classes_carousel{
+        margin: 0px;
+    }
+    .classes_carousel_wrapper .prev-btn{
+        left: 93%;
+        top: -45px;
+    }
+    .classes_carousel_wrapper .next-btn{
+        left: 85%;
+        top: -45px;
+    }
+    .trial_shape{
+        display: none;
+    }
+    .trial_wrapper{
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .about_instructor{
+    &::before{
+        content: '';
+        display: none;
+    }
+    &::after{
+        display: none;
+    }
+    }
+    .events_wrapper{
+        flex-direction: column;
+    }
+    .events_info{
+        max-width: 400px;
+        align-items: start;
+    }
+    .events_carousel_wrapper .prev-btn{
+        left: 93%;
+        top: -45px;
+    }
+    .events_carousel_wrapper .next-btn{
+        left: 85%;
+        top: -45px;
+    }
+    .events_carousel{
+        margin-left: 0px;
+    }
+    .events_carousel_item{
+        padding: 29px;
+    }
+    .testimonials_wrapper{
+        flex-direction: column;
+    }
+    .testimonials_avatars{
+        height: 140px;
+    }
+    .testimonials_heading{
+        margin-bottom: 20px;
+    }
+    .testimonials_slider_slide_review{
+        margin-bottom: 40px;
+    }
+    .testimonials{
+        padding: 0;
+    }
+    .footer_info_media{
+        margin-left: 20px;
+    }
+    .footer_info_work_hours{
+        margin: 0;
+    }
+    .footer_info_work_hours_info_first{
+        justify-content: start;
+    }
+    .footer_info_work_hours_info_first_days{
+        font-size: 15px;
+    }
+    .footer_info_work_hours_info_first_hours{
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    .footer_info_work_hours_info_second{
+        justify-content: start;
+    }
+    .footer_info_work_hours_title{
+        font-size: 22px;
+    }
+    .footer_info_subscription_heading{
+        font-size: 22px;
+    }
+    .footer_info_work_hours_info_third_more{
+        font-size: 15px;
+    }
+    .footer_info_subscription_form_email{
+        width: 255px;
+    }
+    .footer_info_subscription_form_email_input{
+        width: 150px;
+        padding: 0 65px 0 0;
+    }
+    .footer_nav{
+        margin: 0 20px;
+    }
+    .footer_nav_copyright_text{
+        font-size: 15px;
+    }
+    .about_instructor_info_media_banner_img{
+        left: 0;
+        width: 450px;
+    }
+    .about_instructor_info_media_banner_play_btn{
+        left: -6%;
+    }
+}
+@media(max-width:768px){
+    .header{
+        display: none;
+    }
+    .main_shape{
+        display: none;
+    }
+    .main_content{
+        justify-content: center;
+        align-items: center;
+    }
+    .main_subtitle_text{
+        text-align: center;
+    }
+    .classes{
+        &::before{
+            width: 100%;
+        }
+    }
+    .classes_info{
+        margin-left: 35px;
+    }
+    .classes_carousel_items{
+        width: 670px;
+    }
+    .classes_carousel_wrapper .next-btn{
+        left: 76%;
+    }
+    .classes_carousel_wrapper .prev-btn{
+        left: 86%;
+    }
+    .icon_box{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon_box_info{
+        text-align: center;
+    }
+    .about_instructor_info_media_banner_img{
+        position: relative;
+        margin-top: 0px;
+    }
+    .about_instructor_wrapper{
+        flex-direction: column;
+    }
+    .about_instructor_info{
+        margin-top: 50px;
+    }
+    .about_instructor_info_media_banner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about_instructor_wrapper{
+        justify-content: center;
+        align-items: center;
+    }
+    .about_instructor_info_media_banner_play_btn{
+        left: 8%;
+    }
+    .trial_wrapper{
+        margin-top: 50px;
+    }
+    .events{
+        &::before{
+            width: 100%;
+        }
+    }
+    .events_wrapper{
+        flex-direction: column;
+    }
+    .events_info{
+        margin-left: 35px;
+    }
+    .events_carousel_items{
+        width: 670px;
+    }
+    .events_carousel{
+        margin: 0;
+    }
+    .events_carousel_wrapper .next-btn{
+        left: 76%;
+    }
+    .events_carousel_wrapper .prev-btn{
+        left: 86%;
+    }
+    .testimonials_wrapper{
+        justify-content: center;
+        align-items: center;
+    }
+    .testimonials_avatars{
+        padding: 0;
+    }
+    .testimonials_slider_slide{
+        width: 675px;
+    }
+    .testimonials_content{
+        padding: 0;
+        text-align: center;
+    }
+    .footer_info{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_info_subscription_heading{
+        text-align: center;
+    }
+    .footer_info_subscription{
+        margin-top: 30px;
+        width: 340px;
+    }
+    .footer_nav{
+        display: none;
+    }
+    .footer{
+        &::after{
+            display: none;
+        }
+    }
+}
+@media(max-width:425px){
+    .main{
+        max-height: 430px;
+    }
+    .main_content{
+        min-height: 0;
+        min-width: 280px;
+        margin: 0;
+        margin-top: 40px;
+    }
+    .main_title_text{
+        font-size: 18px;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .main_subtitle_text{
+        font-size: 16px;
+        padding: 0 10px;
+        line-height: 24px;
+    }
+    .main_subtitle{
+        margin-top: 5px;
+    }
+    .main_call_to_actions{
+        width: 250px;
+        justify-content: space-between;
+    }
+    .main_call_to_action{
+        width: 115px;
+        height: 115px;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    .main_call_to_action_title{
+        font-size: 12px;
+        text-align: center;
+    }
+    .classes_info_title{
+        font-size: 16px;
+    }
+    .classes_info_subtitle{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .classes_info{
+        max-width: 270px;
+    }
+    
+    .next-btn.slider_btn.slick-arrow{
+        display: none !important;
+    }
+    .prev-btn.slider_btn.slick-arrow{
+        display: none !important;
+    }
+    .classes_carousel{
+        max-width: 320px;
+    }
+    .classes_carousel_wrapper{
+        width: 100%;
+    }
+    .classes{
+        &::before{
+            content: '';
+            min-width: 320px;
+        }
+    }
+    .classes_carousel_items{
+        width: 320px;
+        
+    }
+    .icon_boxes_wrapper{
+        flex-direction: column;
+    }
+    .icon_box{
+        margin-bottom: 25px;
+        justify-content: center;
+    }
+    .icon_boxes .icon_box_icon{
+        margin-right: 0;
+    }
+    .about_instructor_info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about_instructor_info_heading{
+        font-size: 16px;
+    }
+    .about_instructor_info_subheading{
+        font-size: 14px;
+        text-align: center;
+        width: 300px;
+    }
+    .about_instructor_info_descr{
+        text-align: center;
+        width: 300px;
+        .text_paragraph{
+            font-size: 14px;
+        }
+    }
+    .about_instructor_info_more{
+        flex-direction: column;
+    }
+    .about_instructor_info_media{
+        width: 300px;
+    }
+    .about_instructor_info_media_banner_img{
+        width: 300px;
+    }
+    .about_instructor_info_media_banner_play_btn{
+        left: 38%;
+        top: 38%;
+    }
+    .trial_content{
+        width: 300px;
+        margin-left: 0;
+    }
+    .trial_heading{
+        text-align: center;
+        font-size: 16px;
+    }
+    .trial_subheading{
+        font-size: 14px;
+        text-align: center;
+    }
+    .trial_form_name_input{
+        .input_style{
+            width: 300px;
+        }
+        
+    }
+    .trial_form_details{
+        flex-direction: column;
+    }
+    .trial_form_details .input_style{
+        width: 300px;
+        margin-bottom: 30px;
+    }
+    .trial_form_options_option{
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    .option_label{
+        margin-bottom: 30px;
+    }
+    .trial_form_submit_btn{
+        width: 250px;
+    }
+    .trial_form_submit{
+        display: flex;
+        justify-content: center;
+    }
+    .events_info_title{
+        font-size: 16px;
+    }
+    .events_info_subtitle{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .events_info{
+        max-width: 270px;
+    }
+    
+    .next-btn.slider_btn.slick-arrow{
+        display: none !important;
+    }
+    .prev-btn.slider_btn.slick-arrow{
+        display: none !important;
+    }
+    .events_carousel{
+        max-width: 320px;
+    }
+    .events_carousel_wrapper{
+        width: 100%;
+    }
+    .events{
+        &::before{
+            content: '';
+            min-width: 320px;
+        }
+    }
+    .events_carousel_items{
+        width: 320px;
+    }
+    .testimonials_content{
+        width: 320px;
+    }
+    .testimonials_heading{
+        font-size: 16px;
+    }
+    .testimonials_slider_slide_review{
+        font-size: 14px;
+        line-height: 21px;
+        width: 300px;
+        padding-left: 7px;
+    }
+    .testimonials_slider_slide_content{
+        width: 320px;
+    }
+    
+    .footer_info_work_hours{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_info_work_hours_info{
+        width: 320px;
+        align-items: center;
+    }
+    .footer_info_media{
+        align-items: center;
+        border: none;
+    }
+    .footer_info_subscription{
+        display: none;
+    }
+    .about_instructor_info{
+        width: 320px;
+        padding: 0;
+    }
+}

@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: Poppins;
+}
+
+$first-color:#ffc03f;
+$second-color:#64ccf3;
+
+.container{
+    max-width: 1230px;
+    margin: 0 auto;
+}
+@import 'header';
+@import 'main_block';
+@import 'classes_block';
+@import 'icon_boxes';
+@import 'about_instructor';
+@import 'trial_block';
+@import 'events_block';
+@import 'testimonials_block';
+@import 'blog';
+@import 'footer';
+@import 'registration_popap';
+@import 'login_popap';
+@import 'media_popup';
+@import 'info_popup'; 
+@import 'media';
+@import 'admin';
+@import 'dashboard';
+@import 'posts';
+@import 'single_post';
